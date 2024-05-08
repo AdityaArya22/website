@@ -9,3 +9,123 @@ html, body {
     width: 100%;
     height: 100%;
 }
+body{
+    overflow-x: hidden;
+}
+.main{
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.headline{
+    padding: 1vw 8vw;
+    color: #b6b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-headline{
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5vw;
+    align-items: center;
+}
+.details{
+    align-items: center;
+    /* font-weight: semi-bold; */
+    display: flex;
+    gap: 10px;
+}
+.socials{
+    font-size: 1.7vw;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    font-size: 1.7vw;
+    font-weight: 600;
+    background: linear-gradient(to right,#5C04E4,#C03BFE);
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav-items{
+    display: flex;
+    transition: 1s all ease;
+    align-items: center;
+    /* position: relative; */
+    gap: 30px;
+}
+.hamburger{
+    display: none;
+}
+.page1,.page2{
+    height: 100vh;
+    width: 100%;
+}
+.bg-img img{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 100px;
+    z-index: -1;
+}
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .nav-items{
+        position: absolute;
+        top: 60px;
+        left: 800px;
+        flex-direction: column;
+        background: linear-gradient(to right,#5C04E4,#C03BFE);
+        width: 100%;
+        height: 40vw;
+        padding: 5vw 10vw;
+    }
+}
+@media only screen and (max-width: 671px){
+    .nav-items{
+        top:50px;
+    }
+}
+@media only screen and (max-width: 565px){
+    .nav-items{
+        top:40px;
+        height: 40vh;
+    }
+}
+@media only screen and (max-width: 438px){
+    .nav-items{
+        top:37px;
+        height: 40vh;
+    }
+}
+@media only screen and (max-width: 412px){
+    .nav-items{
+        top:30px;
+        height: 40vh;
+    }
+}
+@media only screen and (max-width: 337px){
+    .nav-items{
+        top:25px;
+        height: 40vh;
+    }
+}
