@@ -5,28 +5,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
-.main{
+
+.main {
     width: 100%;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
 }
-.headline{
+
+.headline {
     padding: 1vw 8vw;
     color: #b6b0b0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.left-headline{
+
+.left-headline {
     flex-wrap: nowrap;
     white-space: nowrap;
     display: flex;
@@ -34,13 +40,15 @@ header{
     font-size: 1.5vw;
     align-items: center;
 }
-.details{
+
+.details {
     align-items: center;
     /* font-weight: semi-bold; */
     display: flex;
     gap: 10px;
 }
-.socials{
+
+.socials {
     font-size: 1.7vw;
     display: flex;
     /* justify-content: space-evenly; */
@@ -48,83 +56,98 @@ header{
     align-items: center;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1vw 8vw;
     font-size: 1.7vw;
     font-weight: 600;
-    background: linear-gradient(to right,#5C04E4,#C03BFE);
+    background: linear-gradient(to right, #5C04E4, #C03BFE);
     text-transform: uppercase;
     color: #fff;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     transition: 1s all ease;
     align-items: center;
     /* position: relative; */
     gap: 30px;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
 
-.page1,.page2{
+.page1,
+.page2,
+.page3 {
     height: 100vh;
     width: 100%;
 }
-.bg-img img{
+
+.bg-img img {
     position: absolute;
     width: 100%;
     height: 80%;
     top: -25px;
     z-index: -1;
 }
-.card{
+
+.card {
     width: 60%;
     border-radius: 30px;
     background-color: #f3f0f9ae;
     /* height: 70%; */
     padding: 50px 100px;
 }
-.card h3{
+
+.card h3 {
     text-transform: uppercase;
     font-size: 1.4vw;
-    padding:20px 0;
+    padding: 20px 0;
     white-space: nowrap;
     color: #C03BFE;
     width: 40%;
     border-bottom: 2px solid gray;
     font-weight: 800;
 }
-.card h1{
+
+.card h1 {
     font-size: 2.8vw;
     width: 70%;
     margin-top: 30px;
     font-weight: bold;
 }
-.card .blue{
+
+.blue {
     color: #5C04E4;
 }
-.card .purple{
+
+.purple {
     color: #C03BFE;
 }
+
 .card p {
     width: 80%;
-    color: rgb(64, 63, 63);
+    color: #403f3f;
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 30px;
     align-items: center;
 }
-.btn-container p{
+
+.btn-container p {
     display: block;
     width: auto;
 }
-.discover , .faq{
+
+.discover,
+.faq {
     padding: 15px 40px;
     border-radius: 20px;
     border: none;
@@ -134,76 +157,172 @@ nav{
     font-weight: bold;
 
 }
-.discover{
+
+.discover {
     background-color: #5C04E4;
 }
-.faq{
+
+.faq {
     background-color: #C03BFE;
 }
-.page1{
+
+.page1,
+.page2,
+.page3 {
     position: relative;
     padding: 40px 90px;
 }
 
+.page2 .bg-img img {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.right-card {
+    width: 50%;
+    position: absolute;
+    right: 2rem;
+}
+
+.right-card h1 {
+    font-size: 2.0vw;
+    width: 65%;
+    /* padding: 20px 0; */
+}
+
+.bottom {
+    margin-top: 10px;
+    height: 4px;
+    width: 15%;
+    background-color: #C03BFE;
+}
+
+.right-card p {
+    color: #403f3f;
+    margin-top: 10px;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-shrink: none;
+    flex-wrap: wrap;
+}
+
+.card-details img {
+    width: 8vw;
+}
+
+.card-details {
+    width: 45%;
+    border-radius: 20px;
+    white-space: wrap;
+    margin: 10px;
+    border: 1px solid #403f3f98;
+    padding: 10px;
+}
+
+.page3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #C03BFE, #5C04E4);
+}
+
+.container {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info { 
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: #b6b0b0;
+}
+
+.container img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /* responsive */
-@media only screen and (max-width: 884px){
-    .card{
+@media only screen and (max-width: 884px) {
+    .card {
         padding: 20px;
         width: 80%;
     }
 }
-@media only screen and (max-width: 768px){
-    .hamburger{
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
         display: block;
     }
-    .nav-items{
+
+    .nav-items {
         position: absolute;
+        z-index: 999;
         top: 60px;
         left: 800px;
         flex-direction: column;
-        background: linear-gradient(to right,#5C04E4,#C03BFE);
+        background: linear-gradient(to right, #5C04E4, #C03BFE);
         width: 100%;
         height: 40vw;
         padding: 5vw 10vw;
     }
-    
+
 }
-@media only screen and (max-width: 671px){
-    .nav-items{
-        top:50px;
+
+@media only screen and (max-width: 671px) {
+    .nav-items {
+        top: 50px;
     }
-    .card{
+
+    .card {
         padding: 10px;
         width: 80%;
 
     }
-    .btn-container{
+
+    .btn-container {
         flex-direction: column;
     }
 }
-@media only screen and (max-width: 565px){
-    .nav-items{
-        top:40px;
+
+@media only screen and (max-width: 565px) {
+    .nav-items {
+        top: 40px;
         height: 40vh;
     }
 }
-@media only screen and (max-width: 438px){
-    .nav-items{
-        top:37px;
+
+@media only screen and (max-width: 438px) {
+    .nav-items {
+        top: 37px;
         height: 40vh;
     }
 }
-@media only screen and (max-width: 412px){
-    .nav-items{
-        top:30px;
+
+@media only screen and (max-width: 412px) {
+    .nav-items {
+        top: 30px;
         height: 40vh;
     }
 }
-@media only screen and (max-width: 337px){
-    .nav-items{
-        top:25px;
+
+@media only screen and (max-width: 337px) {
+    .nav-items {
+        top: 25px;
         height: 40vh;
     }
 }

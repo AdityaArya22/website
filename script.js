@@ -95,3 +95,20 @@ function page1Animation(){
  
 }
 page1Animation()
+// let tl2= gsap.timeline()
+tl.from(".card-container .card-details,.right-card h1,.right-card p",{
+    y:20,
+    opacity:0,
+    stagger:0.34,
+    duration:3,
+    // ease:"elastic",
+    scrollTrigger:{
+      trigger:".page2",
+      scroller:".main",
+      // markers:true,
+      pin:true,
+      scrub:3,
+      end:"top 50%",
+      start:"top 30%"     
+    }
+})
