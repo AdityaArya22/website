@@ -75,16 +75,84 @@ nav{
 .bg-img img{
     position: absolute;
     width: 100%;
-    height: 40%;
-    top: 100px;
+    height: 80%;
+    top: 0px;
     z-index: -1;
+}
+.card{
+    width: 60%;
+    border-radius: 30px;
+    background-color: #f3f0f9ae;
+    /* height: 70%; */
+    padding: 50px 100px;
+}
+.card h3{
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    padding:20px 0;
+    white-space: nowrap;
+    color: #C03BFE;
+    width: 40%;
+    border-bottom: 2px solid gray;
+    font-weight: 800;
+}
+.card h1{
+    font-size: 2.8vw;
+    width: 70%;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.card .blue{
+    color: #5C04E4;
+}
+.card .purple{
+    color: #C03BFE;
+}
+.card p {
+    width: 80%;
+    color: rgb(64, 63, 63);
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+.btn-container p{
+    display: block;
+    width: auto;
+}
+.discover , .faq{
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 1.1vw;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+.discover{
+    background-color: #5C04E4;
+}
+.faq{
+    background-color: #C03BFE;
+}
+.page1{
+    position: relative;
+    padding: 40px 90px;
 }
 
 
 
-
-
 /* responsive */
+@media only screen and (max-width: 884px){
+    .card{
+        padding: 20px;
+        width: 80%;
+    }
+}
 @media only screen and (max-width: 768px){
     .hamburger{
         display: block;
@@ -99,10 +167,19 @@ nav{
         height: 40vw;
         padding: 5vw 10vw;
     }
+    
 }
 @media only screen and (max-width: 671px){
     .nav-items{
         top:50px;
+    }
+    .card{
+        padding: 10px;
+        width: 80%;
+
+    }
+    .btn-container{
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 565px){

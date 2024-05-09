@@ -75,8 +75,19 @@ tl.from(".logo, .nav-links",{
   stagger:0.2
 },"a")
 tl.from(".bg-img img",{
-  x:100,
+  // x:100,
   opacity:0,
-  duration:2,
-  ease:"power4"
-},"=+a")
+  duration:3,
+  // ease:"elastic"
+},"a")
+tl.from(".card",{
+  opacity:0,
+  duration:0.3
+},"a")
+tl.from(".card h3,.card h1,.card .btn-container,.card .txt",{
+  y:100,
+  opacity:0,
+  duration:1,
+  delay:0.3,
+  stagger:0.24
+},"a")
