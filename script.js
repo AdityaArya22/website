@@ -56,38 +56,42 @@ function responsive() {
   })
 }
 responsive()
-tl.from("header",{
-  opacity:0,
-  duration:1
-})
-tl.from(".socials i , .details",{
-  y:10,
-  opacity:0,
-  duration:2,
-  ease:"elastic",
-  stagger:0.2
-},"a")
-tl.from(".logo, .nav-links",{
-  y:10,
-  opacity:0,
-  duration:2,
-  ease:"elastic",
-  stagger:0.2
-},"a")
-tl.from(".bg-img img",{
-  // x:100,
-  opacity:0,
-  duration:3,
-  // ease:"elastic"
-},"a")
-tl.from(".card",{
-  opacity:0,
-  duration:0.3
-},"a")
-tl.from(".card h3,.card h1,.card .btn-container,.card .txt",{
-  y:100,
-  opacity:0,
-  duration:1,
-  delay:0.3,
-  stagger:0.24
-},"a")
+function page1Animation(){
+  tl.from("header",{
+    opacity:0,
+    duration:1
+  })
+  tl.from(".socials i , .details",{
+    y:10,
+    opacity:0,
+    duration:2,
+    ease:"elastic",
+    stagger:0.2
+  },"a")
+  tl.from(".logo, .nav-links",{
+    y:10,
+    opacity:0,
+    duration:2,
+    ease:"elastic",
+    stagger:0.2
+  },"a")
+  tl.from(".bg-img img",{
+    // x:100,
+    opacity:0,
+    duration:3,
+    // ease:"elastic"
+  },"a")
+  tl.from(".card",{
+    opacity:0,
+    duration:0.3
+  },"a")
+  tl.from(".card h3,.card h1,.card .btn-container,.card .txt",{
+    y:100,
+    opacity:0,
+    duration:1,
+    delay:0.3,
+    stagger:0.24
+  },"a")
+ 
+}
+page1Animation()
