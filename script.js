@@ -96,7 +96,9 @@ function page1Animation(){
 }
 page1Animation()
 // let tl2= gsap.timeline()
-tl.from(".card-container .card-details,.right-card h1,.right-card p",{
+
+function page2Animation(){
+  tl.from(".card-container .card-details,.right-card h1,.right-card p",{
     y:20,
     opacity:0,
     stagger:0.34,
@@ -112,3 +114,39 @@ tl.from(".card-container .card-details,.right-card h1,.right-card p",{
       start:"top 30%"     
     }
 })
+}
+page2Animation()
+
+function page3Animation(){
+  tl.from(".info h1, .info p, .score-container",{
+    y:20,
+      opacity:0,
+      stagger:0.34,
+      duration:3,
+      // ease:"elastic",
+      scrollTrigger:{
+        trigger:".page3",
+        scroller:".main",
+        markers:true,
+        pin:true,
+        scrub:3,
+        end:"top 50%",
+        start:"top 30%"     
+      }
+  })
+  tl.from(".progress-80,.progress-90,.progress-95",{
+    width:"0%",
+    duration:4,
+    stagger:0.12,
+    scrollTrigger:{
+      trigger:".page3",
+      scroller:".main",
+      markers:true,
+      pin:true,
+      scrub:3,
+      end:"top 50%",
+      start:"top 30%"     
+    }
+  })
+}
+page3Animation()
