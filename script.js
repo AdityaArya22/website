@@ -127,7 +127,7 @@ function page3Animation(){
       scrollTrigger:{
         trigger:".page3",
         scroller:".main",
-        markers:true,
+        // markers:true,
         pin:true,
         scrub:3,
         end:"top 50%",
@@ -141,7 +141,7 @@ function page3Animation(){
     scrollTrigger:{
       trigger:".page3",
       scroller:".main",
-      markers:true,
+      // markers:true,
       pin:true,
       scrub:3,
       end:"top 50%",
@@ -150,3 +150,20 @@ function page3Animation(){
   })
 }
 page3Animation()
+
+tl.from(".page4 h1, .map, .input-container, .page4 button, .contact",{
+  y:20,
+    opacity:0,
+    stagger:0.34,
+    duration:5,
+    // ease:"elastic",
+    scrollTrigger:{
+      trigger:".page4",
+      scroller:".main",
+      // markers:true,
+      pin:true,
+      scrub:3,
+      end:"top 50%",
+      start:"top 30%"     
+    }
+})

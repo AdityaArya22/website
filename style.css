@@ -81,7 +81,7 @@ nav {
 
 .page1,
 .page2,
-.page3 {
+.page3, .page4 {
     height: 100vh;
     width: 100%;
 }
@@ -301,10 +301,87 @@ nav {
 .progress-90{
     width: 90%;
 }
-
-
-
+.page4 .container{
+    display: flex;
+    justify-content: center;
+    padding: 30px 120px;
+    align-items: center;
+    height: 100%;
+}
+.page4 h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.map,.form{
+    width: 50%;
+    margin: 0 20px;
+    height: 100%;
+}
+.map iframe{
+    width: 60%;
+    height: 80%;
+}
+.page4 input{
+    width: 50%;
+    background-color: #F8EBFF;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.input-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+#txt{
+    display: block;
+    height: 5rem;
+    width: 100%;
+}
+.page4 button{
+    padding: 13px 30px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #5C04E4;
+}
+.contact{
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(to right, #5C04E4,#C03BFE);
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.phone, .location ,.mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone i,.location i, .mail i{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+footer{
+    text-align: center;
+    padding: 30px 0;
+}
+footer p{
+    margin-bottom: 6px;
+}
 /* responsive */
+@media only screen and (max-width: 1110px){
+    .info .container p{
+        font-size: 1.1vw;
+    }
+}
 @media only screen and (max-width: 884px) {
     .card {
         padding: 20px;
